@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900& display=swap');
+
+  
+*{
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    scroll-behavior: smooth;
+    outline: none;
+    border: none;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+section {
+    min-height: 100vh;
+    padding: 10remm 9% 2rem;
+    margin: 1.2rem 50px 1.2rem 50px;
+    border-radius: 40px;
+}
+body {
+    background-color: rgb(17, 15, 15);}
+
+.header{width:100%;
+    width:100%;
+    display: flex;
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    padding: 2rem 9%;
+    justify-content: space-between;
+    z-index: 100%;
+    align-items: center;
+    background: #000;
+   
+}
+.header.stickly {
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+}
+     
+.logo{
+    width: 10px;
+    height: 10px;
+    font-size: 1.5rem;
+    color:aliceblue;
+    font-weight: 600;
+    cursor: default;
+}
+.navbar a  {
+    font-size: 2rem;
+    color: aliceblue;
+    margin-left: 4rem;
+    transition: 1s;
+    text-decoration: none;
+}
+
+.drawer{
+    display: none;
+    
+}
+.drawer{}
+
+.navbar a:hover{
+    color: rgb(3, 146, 67);
+}
+.home {
+    display: flex;
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+} 
+.home-img img{
+    width: 30vw;
+    margin-left: 2rem;
+    animation: floatImage 4s ease-in-out infinite;
+}
+@keyframes floatImage {
+  0%{
+    transform: translateY(0);
+  }  
+  50%{
+    transform: translateY(-2.4rem);
+  }  
+  100%{
+    transform: translateY(0);
+  }  
+
+}
+.home-content  h3 {
+    margin-top: 1.5rem;
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+.home-content  h3:nth-of-type(2) {
+    margin-bottom: 3px;
+}
+span { 
+    color: #06f5d5;
+}
+.home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+.home-content p {
+    font-size: 1.6rem;
+    
+}
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid #06f5d5;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #06f5d5;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 1s ease;
+
+} 
+.social-media a:hover {
+    background: #06f5d5 ;
+    color: rgb(22, 17, 17);
+    box-shadow: 0 0 1rem #06f5d5;
+    
+}
+
+.about {
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #313030;
+}
+.about-img img {
+    width:35vw;
+}
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.about-content h2 {
+    text-align: left;
+    line-height: 1.2;
+    margin: 1px;   
+}
+.about-content h3 {
+    font-size: 2rem;
+}
+.about-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+    padding-right: 80px;
+}
+.btn {
+    display: inline-block;
+    padding: 1re 2.8rem;
+    background-color: #06f5d5;
+    border-radius: 8px;
+    box-shadow: 0 0 1rem #06f5d5;
+    font-size: 17px;
+    font-weight: 600;
+    transition: 5s ease;
+}
+.services  {
+    color: aliceblue;
+}
+.services h2 {
+  margin-bottom: 5rem; 
+  color: aliceblue; 
+}
+.services-contianer {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+gap: 2rem;
+
+}
+
+.services-contianer .services-box{
+ flex: 1 1 30rem; 
+ background: rgb(46, 48, 47); 
+  padding: 3rem 2rem 4rem;
+  border-radius: 3rem;
+  text-align: center;
+  border: 0.2rem solid rgb(17, 15, 15);
+  transition: 1.2s ease;
+}
+.services-contianer .services-box:hover{
+    border-color: #06f5d5;
+    transform: scale(1.08); /*zoom size */
+}
+.services-box i{
+    font-size: 7rem;
+    color: #06f5d5;
+}
+.services-box h3{
+   font-size: 2.6rem; 
+}
+.btn{
+    text-decoration: none;
+}
+.services-box p{
+    font-size:1.6rem ;
+    margin: 1rem 0 3rem;
+}
+/* portfolio section*/
+.portfolio {
+    background: rgb(46, 48, 47);
+
+}
+.portfolio-box img {
+    width: 100%;
+    transition: .5s ease; /*speed move*/
+}
+.portfolio h2 {
+    margin-bottom: 4rem;
+}
+.portfolio-container {
+   display: grid; /* like gird or by columns*/
+   grid-template-columns: repeat(2, 1fr); /*2 number of columns ,1fr distance between them*/
+   align-items: center;
+   gap: 2.5rem;
+}
+.portfolio-container .portfolio-box {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem  rgb(17, 15, 15);
+    overflow: hidden;
+    display: flex;
+}
+.portfolio-box:hover img{
+    transform: scale(1.1); /* scale zoom*/
+}
+.portfolio-box .portfolio-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1), #06f5d5);
+    display: flex;
+    justify-content: center;/* horzintal direction*/
+    align-items: center;/* vertical direction*/
+    flex-direction: column;
+    text-align: center;
+    padding:0 4rem;
+    transform: translateY(100%);/* move y direction */
+    transition: .5s ease;
+    
+}
+.portfolio-box:hover .portfolio-layer{
+     transform: translateY(0);
+    }
+.portfolio-layer h4 {
+      font-size: 3rem;
+     }
+.portfolio-layer p {
+    font-size: 2rem;
+    margin:3rem 0 1rem;
+}
+.portfolio-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background:#eaeeed;
+    border-radius: 50%;
+
+
+}
+.portfolio-layer a i {
+    font-size: 2rem;
+    color: #0e0d0d;
+}
+
+.contact{
+    border-radius: 7rem;
+    background: rgb(60, 63, 61);
+}
+
+.contact h2 {
+    margin-bottom: 3rem;
+}
+ 
+.contact form {
+     max-width: 70rem;
+     margin: 1rem auto;
+     text-align: center;
+     margin-bottom: 3rem;
+}
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.contact form .input-box input, .contact form textarea {
+    width:100%;
+    padding:1.5rem;
+    font-size:1.6rem;
+    color:#c0cac9;
+    background:rgb(16, 17, 17);
+    border-radius: .8rem;
+    margin: .7rem 0;
+
+}
+
+.contact form .input-box input {
+    width: 49%;
+}
+
+.contact form textarea {
+    resize: none;
+}
+.contact form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:2rem 9%;
+    background: #f0f3f1;
+
+}
+.footer-text p {
+    font-size: 1.6rem;  
+}
+
+.footer-icoTop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: #06f5d5;
+    border-radius: .8rem;
+    transition: .5s ease;
+
+}
+.footer-icoTop a:hover {
+    box-shadow:  0 0  1rem #06f5d5;
+}
+
+.footer-icoTop a i {
+    font-size: 150px;
+    color: rgb(16, 17, 17);
+    background: #06f5d5;
+
+
+}
+
+/*BREAKPOINTS*/
+@media (max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+}
+@media (max-width:991px){
+    .header{ padding:2rem 3%;
+    }
+    section{
+        padding:10rem 3% 2rem;
+    }
+    .services{
+        padding-bottom:7rem ;
+    }
+    .portfolio{
+        padding-bottom: 7rem;
+    }
+    .contect {
+        main-height: auto;
+    }
+    .footer{
+        padding:2rem 3%; 
+    }
+}
+@media (max-width:768px){
+    #menu-icon{
+        display: block;
+    }
+
+    .drawer{
+        display: block;
+    }
+
+.navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background:  rgb(16, 17, 17);
+    border-top: 1rem solid rgba( 0,0,0,.2);
+    box-shadow: 0 .5rem 1rem rgba( 0,0,0,.2) ;
+    display: none;
+}  
+.navbar.active { 
+    display: block;}
+.navbar a {
+    display: block;
+    font-size:2rem;
+    margin:3rem 0;
+}
+.home {
+    flex-direction: column ;
+}
+.home-content h3 {
+    font-size: 2.6rem;
+}
+.home-content h1 {
+    font-size: 5rem;
+}
+.home-img{
+   width: 70vw;
+   margin-top: 4rem;  
+}
+.about {
+    flex-direction: column-reverse;
+}
+.about img {
+    width:70vw;
+    margin-top: 4rem;
+}
+.services h2 {
+    margin-bottom: 3rem;
+
+}
+.portfolio  h2 {
+    margin-bottom: 3rem;
+}
+.portfolio-container:repeat (2, 1fr);
+}  
+@media (max-width: 617px){
+    .portfolio-container{
+        grid-template-columns: 1fr;
+        
+    }
+    #menu-icon{
+        display: block;
+}
+@media (max-width: 450px){
+    html{
+        font-size:50%;
+    }
+
+.contact form .input-box input{
+    width:100%
+}
+
+}
+@media (max-width: 365px){
+    .home-img img {
+        width:90vw;
+
+    }
+    .about-img img {
+        width: 90vw; 
+    }
+    .footer{
+        flex-direction: column-reverse;
+    }
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
+    }
+   
+     
+}
